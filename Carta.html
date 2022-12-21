@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <title>Contacto</title>
+  <link href="Index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body background="./Fotos/snwflks-106.gif">
+  <div class="contact_form">
+
+    <div class="formulario">
+      <h1>Carta a los reyes</h1>
+      <h3>Escribe aquí tu carta y se enviara directamente a los reyes</h3>
+
+
+      <form action="submeter-formulario.php" method="post">
+
+
+        <p>
+          <label for="nombre" class="colocar_nombre">Nombre
+            <span class="obligatorio">*</span>
+          </label>
+          <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+            placeholder="Escribe tu nombre">
+        </p>
+
+
+        <p>
+          <label for="website" class="colocar_website">Dirección
+          </label>
+          <input type="text" name="Dirección" id="website" placeholder="Escribe la dirección de tu casa">
+        </p>
+
+        <p>
+          <label for="asunto" class="colocar_asunto">Saludo
+          </label>
+          <input type="text" name="introducir_asunto" id="assunto"
+            placeholder="Queridos Reyes Magos">
+        </p>
+
+        <p>
+          <label for="mensaje" class="colocar_mensaje">Quiero por navidad:
+            <span class="obligatorio">*</span>
+          </label>
+          <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+            placeholder="Quiero por navidad..."></textarea>
+        </p>
+
+        <button type="submit" name="enviar_formulario" id="enviar">
+          <p>Enviar</p>
+        </button>
+
+        <p class="aviso">
+          <span class="obligatorio"> * </span>los campos son obligatorios.
+        </p>
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
